@@ -2,6 +2,7 @@ package petstore;
 
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
+import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -68,6 +69,27 @@ public class Pet {
                 .body("tags.name", contains("vacinated"))
 
         ;
+
+}
+
+@Test (priority = 3)
+public void AlterarPet() throws IOException {
+
+      String jsonBody = lerJson("DB/pet2json");
+
+      given()
+              .contentType("application/json")
+              .log().all()
+              .body(jsonBody)
+      .when()
+              .put(uri)
+      .then()
+              .log().all()
+              .statusCode(200)
+              .body("name",is("Athena"))
+              .body("status", is ("Sold"))
+      ;
+
 
 
 }

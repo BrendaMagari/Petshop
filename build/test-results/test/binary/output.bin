@@ -1,0 +1,166 @@
+Request method:	POST
+0Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 103031198989,
+    "category": {
+        "id": 1,
+        "name": "Dog"
+    },
+    "name": "Athena",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 2021,
+             "name": "vacinated"
+
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+$Date: Tue, 28 Feb 2023 12:00:47 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+5Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+CAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 103031198989,
+    "category": {
+        "id": 1,
+        "name": "Dog"
+    },
+    "name": "Athena",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 2021,
+             "name": "vacinated"
+
+        }
+    ],
+    "status": "available"
+}
+Request method:	GET
+=Request URI:	https://petstore.swagger.io/v2/pet/103031198989
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+5				Content-Type=aplication/json; charset=ISO-8859-1
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+$Date: Tue, 28 Feb 2023 12:00:56 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+5Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+CAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 103031198989,
+    "category": {
+        "id": 1,
+        "name": "Dog"
+    },
+    "name": "Athena",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 2021,
+             "name": "vacinated"
+
+        }
+    ],
+    "status": "available"
+}
+Request method:	PUT
+0Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+"				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 103031198989,
+    "category": {
+        "id": 1,
+        "name": "Dog"
+    },
+    "name": "Athena",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 2021,
+             "name": "vacinated"
+
+        }
+    ],
+    "status": "Sold"
+}
+HTTP/1.1 200 OK
+$Date: Tue, 28 Feb 2023 12:00:57 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+5Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+CAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 103031198989,
+    "category": {
+        "id": 1,
+        "name": "Dog"
+    },
+    "name": "Athena",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 2021,
+             "name": "vacinated"
+
+        }
+    ],
+    "status": "Sold"
+}

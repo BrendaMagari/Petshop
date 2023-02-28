@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'br.com.itersys'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation group: 'org.testng', name: 'testng', version: '7.1.0'
+    testImplementation group: 'io.rest-assured', name: 'rest-assured', version: '4.4.0'
+
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useTestNG()
+}
