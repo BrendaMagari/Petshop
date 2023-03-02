@@ -90,8 +90,21 @@ public void AlterarPet() throws IOException {
               .body("status", is ("Sold"))
       ;
 
+}
+
+@Test
+    public void excluirPet() throws IOException {
+
+        String petId = "103031198989";
 
 
+    given()
+            .contentType("application/json")
+            .log().all()
+    .get(uri +"/"+ petId)
+
+
+;
 }
 
 }
