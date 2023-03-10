@@ -92,19 +92,27 @@ public void AlterarPet() throws IOException {
 
 }
 
-@Test
+@Test(priority = 4)
     public void excluirPet() throws IOException {
 
-        String petId = "103031198989";
+    String petId = "103031198989";
 
 
     given()
             .contentType("application/json")
             .log().all()
-    .get(uri +"/"+ petId)
+    .when()
+            .delete(uri + "/" + petId)
+    .then()
+            .log().all()
+            .statusCode(200)
+            .body("code", is (200))
+            .body("type", is ("unknown"))
+            .body("message", is (petId))
 
-
-;
+    ;
 }
+
+
 
 }
