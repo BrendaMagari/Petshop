@@ -1,8 +1,6 @@
 package petstore;
 
-import io.restassured.RestAssured;
 import org.testng.annotations.Test;
-import sun.management.snmp.jvmmib.JVM_MANAGEMENT_MIBOidTable;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -112,7 +110,37 @@ public void AlterarPet() throws IOException {
 
     ;
 }
+    public class Curso {
+        //3.1 - atributos
+        String uri = "https://localhost:8080;
+
+        //3.2  - Metodos e funções
 
 
+        public String lerJson(String caminhoJson) throws IOException {
 
-}
+            return new String(Files.readAllBytes(Paths.get(caminhoJson)));
+        }
+        @Test
+        public void consultarcliente(){
+            String clienteId = "123456787";
+
+            given()
+                    .contentType("aplication/json")
+                    .log().all()
+
+                    .when()
+                    .get(uri + "/" + clienteId)
+
+                    .then()
+                    .log().all()
+                    .statusCode(200)
+                    .body("name", is("Mickey"))
+                    .body("idade", is(30))
+                    .body("id", is("123456787"))
+            //.body("risco", contains(-40))
+            ;
+        }
+
+
+    }

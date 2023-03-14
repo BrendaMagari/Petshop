@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="petstore.Pet" tests="3" skipped="0" failures="0" errors="0" timestamp="2023-02-28T12:00:33" hostname="Eduardos-MacBook-Pro.local" time="24.454">
+<testsuite name="petstore.Pet" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-03-10T13:01:03" hostname="Eduardos-MacBook-Pro.local" time="19.887">
   <properties/>
-  <testcase name="incluirPet" classname="petstore.Pet" time="21.602"/>
-  <testcase name="consultarPet" classname="petstore.Pet" time="1.821"/>
-  <testcase name="AlterarPet" classname="petstore.Pet" time="0.995"/>
+  <testcase name="incluirPet" classname="petstore.Pet" time="15.979"/>
+  <testcase name="consultarPet" classname="petstore.Pet" time="1.802"/>
+  <testcase name="AlterarPet" classname="petstore.Pet" time="0.85"/>
+  <testcase name="excluirPet" classname="petstore.Pet" time="1.145"/>
   <system-out><![CDATA[Request method:	POST
 Request URI:	https://petstore.swagger.io/v2/pet
 Proxy:			<none>
@@ -35,7 +36,7 @@ Body:
     "status": "available"
 }
 HTTP/1.1 200 OK
-Date: Tue, 28 Feb 2023 12:00:47 GMT
+Date: Fri, 10 Mar 2023 13:01:14 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -75,7 +76,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Tue, 28 Feb 2023 12:00:56 GMT
+Date: Fri, 10 Mar 2023 13:01:20 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -133,7 +134,7 @@ Body:
     "status": "Sold"
 }
 HTTP/1.1 200 OK
-Date: Tue, 28 Feb 2023 12:00:57 GMT
+Date: Fri, 10 Mar 2023 13:01:21 GMT
 Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -159,6 +160,33 @@ Server: Jetty(9.2.9.v20150224)
         }
     ],
     "status": "Sold"
+}
+Request method:	DELETE
+Request URI:	https://petstore.swagger.io/v2/pet/103031198989
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 10 Mar 2023 13:01:22 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "103031198989"
 }
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
